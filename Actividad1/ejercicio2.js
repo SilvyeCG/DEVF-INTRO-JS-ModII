@@ -3,13 +3,7 @@ ambos. Guarda el código en un archivo js. */
 
 
 var numero1 = prompt("Escribe el primer numero")
-// undefined
 var numero2 = prompt("Escribe el segundo numero")
-// undefined
 var total = numero1 - numero2
-// undefined
 console.log(total)
-// VM1316:1 5
-// undefined
 alert(total)
-// undefined
