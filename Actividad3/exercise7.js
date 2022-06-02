@@ -1,3 +1,9 @@
+/*
+Solicitar al usuario que ingrese tres números y mostrar cual de los tres es el número mayor.
+Considerar el caso en que 2 números sean iguales
+
+*/
+
 var num1 = prompt('Ingresa el primer número: ');
 var num2 = prompt('Ingresa el segundo número: ');
 var num3 = prompt('Ingresa el tercer número: ');

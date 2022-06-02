@@ -1,3 +1,14 @@
+/*
+Con ayuda de la función prompt pedir dos datos al usuario: Nombre, edad
+
+Para luego imprimir en pantalla el siguiente resultado:
+
+- Si el usuario tiene edad de 18 o mayor puede ingresar a la discoteca
+- Si el usuario es menor de 18 no puede ingresar a la discoteca
+- Si el usuario se llama Mario o Carlos puede ingresar a VIP
+
+*/
+
 var namePerson = prompt('What is your name?');
 var age = prompt('What is your age?');
 

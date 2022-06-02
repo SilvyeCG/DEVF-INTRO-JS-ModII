@@ -1,3 +1,9 @@
+/*
+Solicitar al usuario que ingrese dos números y mostrar cual de los dos es menor. No considerar 
+el caso en que ambos sean iguales
+
+*/
+
 var num1 = prompt('Ingresa un primer número ');
 var num2 = prompt('Ingresa otro número diferente');
 
