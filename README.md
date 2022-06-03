@@ -2,7 +2,7 @@
 
 
 # -------------------------------------------------------------
-# >>>>>>>>>>>>>>>>>>>>>>> Actividad-1 <<<<<<<<<<<<<<<<<<<<<<<<<
+#       Actividad-1 
 # -------------------------------------------------------------
 
  # ---> 1.1 En la consola del navegador, crea un pequeño programa que le pida al usuario que ingrese un nùmero, multiplica ese número por 2 y muestra en salida el resultado de esa operación. <---
@@ -13,13 +13,13 @@
 # ---> 1.4. Escribe un programa que calcule el área de un rombo, sabiendo que D = 8cm, d= 6cm (Formula: a=DXd/2) <---
 
 # -------------------------------------------------------------
-# >>>>>>>>>>>>>>>>>>>>>>> Actividad-2 <<<<<<<<<<<<<<<<<<<<<<<<<
+#       Actividad-2 
 # -------------------------------------------------------------
 
 # ---> 2.1 Cuestionario de Coercion <---
 
 # -------------------------------------------------------------
-# >>>>>>>>>>>>>>>>>>>>>>> Actividad-3 <<<<<<<<<<<<<<<<<<<<<<<<<
+#       Actividad-3 
 # -------------------------------------------------------------
 
 # ---> 3.1. Con ayuda de la función prompt pedir dos datos al usuario: Nombre, edad Para luego imprimir en pantalla el siguiente resultado: 
@@ -40,7 +40,7 @@
 # ---> 3.7. Solicitar al usuario que ingrese tres números y mostrar cual de los tres es el número mayor. Considerar el caso en que 2 números sean iguales <---
 
 # -------------------------------------------------------------
-# >>>>>>>>>>>>>>>>>>>>>>> Actividad-4 <<<<<<<<<<<<<<<<<<<<<<<<<
+#       Actividad-4 
 # -------------------------------------------------------------
 
 # ---> 4.1. Leer el cap 2 del libro Eloquent Javascript: Estructura del programa <---
@@ -52,7 +52,7 @@
 # ---> 4.4. Usando for, crea un programa que imprima en consola los números impares del 1 al 50 <---
 
 # -------------------------------------------------------------
-# >>>>>>>>>>>>>>>>>>>>>>> Actividad-5 <<<<<<<<<<<<<<<<<<<<<<<<<
+#       Actividad-5 
 # -------------------------------------------------------------
 
 # ---> 5.1. Construye un codigo bajo las siguientes reglas
@@ -64,7 +64,7 @@
 # ----> 5.3.Por medio del ciclo for iterar el array creado en el ejercicio 2 e imprimir cada uno de los elementos de manera ordenada <---
 
 # -------------------------------------------------------------
-# >>>>>>>>>>>>>>>>>>>>>>> Actividad-6 <<<<<<<<<<<<<<<<<<<<<<<<<
+#       Actividad-6 
 # -------------------------------------------------------------
 
 # ----> 6.1. concatenar los siguientes arreglos
@@ -78,7 +78,7 @@
 # ----> 6.4. retira el elemento 'eagle' del arreglo animals <---
 
 # -------------------------------------------------------------
-# >>>>>>>>>>>>>>>>>>>>>>> Actividad-n <<<<<<<<<<<<<<<<<<<<<<<<<
+#       Actividad-n 
 # -------------------------------------------------------------
 
 # ---->  <---
