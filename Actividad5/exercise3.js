@@ -1,5 +1,6 @@
 /*
-Por medio del ciclo for iterar el array creado en el ejercicio 2 e imprimir cada uno de los elementos de manera ordenada
+Por medio del ciclo for iterar el array creado en el ejercicio 2 e imprimir cada uno de los elementos de 
+manera ordenada
 
 */
 let array = [];

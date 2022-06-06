@@ -1,5 +1,5 @@
 /*
-Construye un c{odigo bajo las siguientes reglas
+Construye un codigo bajo las siguientes reglas
 
     itera arrelo = [ 1, 4, 10, 22, 55, 46, 2, 5, 0]
 
