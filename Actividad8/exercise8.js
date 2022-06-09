@@ -12,6 +12,8 @@ var Car = {
     year: 2016
 }
 
+//El método hasOwnProperty() devuelve un booleano indicando si el objeto tiene la propiedad especificada.
+
 function myFunction(object, valor){
     console.log(Car.hasOwnProperty(valor));
 }
