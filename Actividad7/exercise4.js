@@ -1,20 +1,7 @@
 /*  
-Crear un programa el cual sirva para convertir temperaturas. De celsius a fahrenheit  y de 
-*/
-/*
-
-function celsius(grades){
-    let totalc = grades * 9 / 5.0 + 32;
-    return totalc;
-}
-
-function fahrenheit(grades){
-    let totalf = (grades - 32) * 5 / 9;
-    return totalf;
-}
-
-celsius(58);
-fahrenheit(38);
+Crear un programa el cual sirva para convertir temperaturas. De celsius a fahrenheit  y viceversa. Utiliza
+las expresiones matemáticas necesarias para la conversión. Que dicho progama recibe como argumento las 
+temperaturas y regresa el resultado imprimiendo en pantalla la conversión. Tu solución es libre a tu lógica.
 
 */
 
