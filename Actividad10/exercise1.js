@@ -31,37 +31,33 @@
       age: 25
     }
   ];
-let menor =100
-let mayor = 0
-let count = 0
-let ismayor= 0
-let ismenor = 0
 
-function myFunction(Family, age){
+ var difference = 0;
 
-    const ages = Family.map((element) =>{
-        return element['age']
-    })
+// 1er funcion ordena ascendentemente las edades de el arreglo de objetos
+// a,b lo que hacen es tomar los dos primeros valores, comparan con el if y despues van tomando el siguiente valor para compararlo y asi sucesivamente
+//el primer if compara si es menor, y regresa 1 valor antes
+//el segundo if else compara si es mayor, y lo deja en la posicion siguiente
+//el else es si tienen la misma edad, los deja en esa posicion
 
-    ages.forEach((item) => {
-        if(item >mayor){
-            mayor = item;
-        }else if(item < menor){
-            menor = item;
-        }
+const order = Family.sort((a,b) => {
+  if(a.age < b.age){
+    return -1
+  }else if(a.age > b.age){
+    return 1;
+  }else {
+    return 0;
+  }
+});
 
-        count++
-        // if(count == Family.length){
-        //     while(!Family.includes(mayor)){
-        //         mayor--
-        //     }
-        //     while(!Family.includes(menor)){
-        //         menor--
-        //     }
-        // }       
-    });
-}
+//esta función, crea un nuevo array unicamente con las edaddes ya ordenadas
 
-console.log('LA EDAD MAYOR ES: '+ mayor);
-console.log('LA EDAD MENOR ES: ' + menor);
-console.log('LA DIFERENCIA DE EDADES ES' + (mayor - menor));
+const order1= order.map((element) => {
+  return element['age']
+} )
+
+//hace la comparación entre el ultimo elemento y el primer elemento del array con las puras  para saber la diferencia
+
+const result = order1[5] - order1[0];
+
+console.log('El miembro más grande tiene ' + order1[5] + ' y el miembro más joven tiene ' + order1[0] + ' por lo tanto, la diferencia de edadades es de ' + result + ' años');

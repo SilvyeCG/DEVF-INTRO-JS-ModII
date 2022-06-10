@@ -14,19 +14,42 @@ Los números que faltan en arr son [4,6]
 
 let matriz = [7,2,5,3,5,3];
 let br = [7,2,5,4,6,3,5,3];
-var different = 0;
-var num = 0;
 
-for(var i = 0; i<br.length;i++){
-  for(var j = 0; j<matriz.length; j++){
-    if(br[i] != matriz[j]){
-      
-      console.log('falta el numero ' );
-      different++
+var m1 = 0;
+var br1 = 0;
+var i = 0;
+
+/*
+while(i <= 7){
+
+  let existeMatriz = matriz.find (element => element == i);
+  let existeBr = br.find(element => element == i);
+
+  if(existeMatriz != existeBr){
+    console.log('No existe el numero ' + i);
+
+    
+  }
+
+  i++
+}
+*/
+
+
+// Lo mismo pero con una función
+
+function results(){
+  while(i <= 7){
+
+    let existeMatriz = matriz.find (element => element == i);
+    let existeBr = br.find(element => element == i);
+  
+    if(existeMatriz != existeBr){
+      console.log('No existe el numero ' + i);     
     }
+  
+    i++
   }
 }
 
-
-
-
+console.log(results());

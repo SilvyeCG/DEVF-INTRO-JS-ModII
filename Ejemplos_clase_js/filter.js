@@ -27,6 +27,8 @@ const pets = [
 
 ]
 
+
+
 //filter
 
 //traer solo el elemento que su especie sea dog

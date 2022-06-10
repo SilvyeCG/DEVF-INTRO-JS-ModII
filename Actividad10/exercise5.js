@@ -15,11 +15,10 @@
 const a = [1,2,3]
 const b = ['a','b','c']
 
-var c = [];
-
-for (let i = 0; i <a.length; i++){
-    for (let j = 0; j <b.length; j++){
-        
+function print(){
+    for(let i = 0; i < a.length; i ++){
+        console.log(a[i] + b[i]);
     }
-    
 }
+
+console.log(print())
