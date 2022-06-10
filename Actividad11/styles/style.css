@@ -1,0 +1,30 @@
+.container{
+    border: 5px solid gray;
+    background-color: black;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    height: 100%;
+    
+}
+
+.calculator{
+    display: grid;
+    place-content: center;
+    height: 100%; 
+    grid-template-areas: 
+    "screen screen screen screen"
+    "siete ocho nuevo entre"
+    "cuatro cinco seis menos"
+    "uno dos tres mas"
+    "menosmas cero decimal igual"
+    
+}
+#display{
+    margin: 3vw;
+}
+
+button{
+    font-size: 20px;
+    text-align: center;
+}

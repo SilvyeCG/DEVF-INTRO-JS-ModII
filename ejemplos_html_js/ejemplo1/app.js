@@ -6,7 +6,7 @@ let count = 0;
 //traer el elemento span para reflejar el contador
 
 let value = document.getElementById('contador');
-
+/* EVENT HANDLER 
 // incrementar o decrementar con los botones mediante eventos
 
 function incrementar(){
@@ -25,3 +25,21 @@ function decrementar(){
     }
     
 }
+
+*/
+
+/* EVENT LISTENER */
+
+const button = document.getElementById('incrementar');
+
+button.addEventListener('click', function() {
+   count++
+   value.textContent = count 
+})
+
+const button1 = document.getElementById('decrementar');
+
+button1.addEventListener('click', function() {
+    count--  
+    value.textContent = count 
+})
