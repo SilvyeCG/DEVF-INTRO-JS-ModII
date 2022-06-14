@@ -1,0 +1,9 @@
+.bg-primary {
+    --bs-bg-opacity: 1;
+    background-color: rgb(105, 14, 105)!important;
+}
+
+.thumb {
+    width: 100px;
+    height: 100px;
+}

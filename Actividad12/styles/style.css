@@ -1,0 +1,9 @@
+.bg-secondary {
+    --bs-bg-opacity: 1;
+    background-color: rgb(240, 145, 110)!important;
+}
+
+.bg-primary {
+    --bs-bg-opacity: 1;
+    background-color: rgb(231, 133, 21)!important;
+}
