@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+  <body>
+    <header class="bg-black">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <nav class="navbar navbar-expand-lg navbar-dark">
+                        <div class="container-fluid">
+                            <a href="#" class="navbar-brand">Buscador peliculas</a>
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link">Fantasia</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link">Suspenso</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link">Musical</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        <div class="row">
+            <div class="col-12">
+                <h1 class="text-center pt-5 text-white">Buscador de películas</h1>
+                <div class="card my-5 p-3">
+                    <form id="form-busqueda" class="">
+                        <div class="row">
+                            <div class="col-3">
+                                <label for="inputName">Nombre</label>
+                                <input type="text" id="inputName" class="form-control">
+                            </div>
+
+                            <div class="col-3">
+                                <label for="inputGenre">Género</label>
+                                <select name="" id="inputGenre" class="form-control">
+                                    <option value selected>Choose...</option>
+                                    <option value="fantasia">Fantasia</option>
+                                    <option value="suspenso">Suspenso</option>
+                                    <option value="musical">Musical</option>
+                                </select>
+                            </div>
+
+                            <div class="col-3">
+                                <label for="inputYear">Año</label>
+                                <select name="" id="inputYear" class="form-control">
+                                    <option value selected>Choose...</option>
+                                    <option value="40s">40s</option>
+                                    <option value="50s">50s</option>
+                                    <option value="60s">60s</option>
+                                </select>
+                            </div>
+
+                            <div class="col-3 d-flex align-items-end">
+                                <button type="Submit" class="btn btn-success w-100 ">Buscar</button>
+                                
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        </div>
+    </header>
+
+    <main class="bg-dark text-white py-5">
+        <div class="container">
+            <div id="box-peliculas" class="row row-cols-2">
+                <div class="col mb-3">
+                    <div class="card bg-secondary flex-row">
+                        <div class="w-50"> <!--width = w-x  x = tamaño del width -->
+                            <img src="./images/pdc1.jfif" class="img-fluid object-fit" alt="">
+                        </div>
+                        <div class="card-body">
+                            <h2 class="card-title">Pirates of the Caribbean: The Curse of the Black Pearl</h2>
+                            <p class="card-text mb-1">Género: Fantasia</p>
+                            <p class="card-text mb-1">Año: 2003</p>
+                            <p class="card-text mb-1">Description: Captain Jack Sparrow seeks the heart of Davy Jones, in order to avoid being enslaved to him</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col mb-3">
+                    <div class="card bg-secondary flex-row">
+                        <div class="w-50"> <!--width = w-x  x = tamaño del width -->
+                            <img src="./images/pdc1.jfif" class="img-fluid object-fit" alt="">
+                        </div>
+                        <div class="card-body">
+                            <h2 class="card-title">Pirates of the Caribbean: Dead Man's Chest</h2>
+                            <p class="card-text mb-1">Género: Fantasia</p>
+                            <p class="card-text mb-1">Año: 2006</p>
+                            <p class="card-text mb-1">Description: Captain Jack Sparrow seeks the heart of Davy Jones, in order to avoid being enslaved to him</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col mb-3">
+                    <div class="card bg-secondary flex-row">
+                        <div class="w-50"> <!--width = w-x  x = tamaño del width -->
+                            <img src="./images/pdc1.jfif" class="img-fluid object-fit" alt="">
+                        </div>
+                        <div class="card-body">
+                            <h2 class="card-title">Pirates of the Caribbean: At World's End</h2>
+                            <p class="card-text mb-1">Género: Fantasia</p>
+                            <p class="card-text mb-1">Año: 2007</p>
+                            <p class="card-text mb-1">Description: Captain Jack Sparrow seeks the heart of Davy Jones, in order to avoid being enslaved to him</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col mb-3">
+                    <div class="card bg-secondary flex-row">
+                        <div class="w-50"> <!--width = w-x  x = tamaño del width -->
+                            <img src="./images/pdc1.jfif" class="img-fluid object-fit" alt="">
+                        </div>
+                        <div class="card-body">
+                            <h2 class="card-title">Pirates of the Caribbean: On Stranger Tides</h2>
+                            <p class="card-text mb-1">Género: Fantasia</p>
+                            <p class="card-text mb-1">Año: 2011</p>
+                            <p class="card-text mb-1">Description: Captain Jack Sparrow seeks the heart of Davy Jones, in order to avoid being enslaved to him</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+  </body>
+</html>
