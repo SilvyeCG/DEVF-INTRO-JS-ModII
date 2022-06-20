@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="container my-5 ">
+        <div class="row">
+            <header class="col-3">
+                <form id="form-search" class="#">
+                    <div class="row">
+                        <div class="col">
+                            <input type="text" id="inputSearch" class="form-control">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <ul class="navbar-nav ms-auto mb-2">
+                                <li class="nav-item">
+                                    <a href="#" id="allItems" onclick="allArticles();" class="nav-link">All</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" id="Dresses" onclick="showDresses();" class="nav-link">Dresses</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" id="Casual" onclick="showCasual();" class="nav-link">Casual</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" id="Babies" onclick="showBabies();" class="nav-link">Babies</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" id="makeup" class="nav-link">Make up</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </form>
+            </header>
+
+            <main class="col-9">
+                <div id="box-images" class="row row-cols-3">
+                    
+                    <!--replica-->
+                    <!--
+                    <div class="col mb-3"> 
+                        <div class="card">
+                            <div class="w-25">
+                                <img src="./images/prueba.jpg" class="img-fluid object-fit" alt="">
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text text-center mb-1">TITLE</p>
+                                <p class="card-text text-center mb-1">Price</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col mb-3"> 
+                        <div class="card">
+                            <div class="w-25">
+                                <img src="./images/prueba.jpg" class="img-fluid object-fit" alt="">
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text text-center mb-1">TITLE</p>
+                                <p class="card-text text-center mb-1">Price</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col mb-3"> 
+                        <div class="card">
+                            <div class="w-25">
+                                <img src="./images/prueba.jpg" class="img-fluid object-fit" alt="">
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text text-center mb-1">TITLE</p>
+                                <p class="card-text text-center mb-1">Price</p>
+                            </div>
+                        </div>
+                    </div>
+
+                -->
+
+                </div> <!--close -- box-images-->
+            </main>
+        </div>
+    </div>
+    <script src="./javascript/articles.js"></script>
+    <script src="./javascript/code.js"></script>
+</body>
+</html>
