@@ -19,7 +19,7 @@ var m1 = 0;
 var br1 = 0;
 var i = 0;
 
-/*
+
 while(i <= 7){
 
   let existeMatriz = matriz.find (element => element == i);
@@ -33,11 +33,11 @@ while(i <= 7){
 
   i++
 }
-*/
+
 
 
 // Lo mismo pero con una función
-
+/*
 function results(){
   while(i <= 7){
 
@@ -52,4 +52,4 @@ function results(){
   }
 }
 
-console.log(results());
+console.log(results()); */
