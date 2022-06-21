@@ -1,6 +1,3 @@
-let pUser = document.getElementById('txtUserName').value.toString();
-let pPass = document.getElementById('txtPassword').value.toString();
-console.log(pUser, pPass);
 const usersList = [
    
     {
@@ -23,8 +20,36 @@ const usersList = [
     }
 ];
 
-console.log('entre al file')
+let loginForm = document.querySelector('#formAccount');
 
+loginForm.addEventListener('submit', (e) => {
+
+    // extraer los elementos de user y pass
+    var userName = document.getElementById('txtUserName').value.toString();
+    var userPassword = document.getElementById('txtPassword').value.toString();
+    
+    e.preventDefault();
+    //pasar la funcion
+    validateCredentials(userName, userPassword);
+});
+
+function validateCredentials(pUser, pPass){
+
+    for(let i = 0; i < usersList.length; i++){
+        // console.log('hi')
+
+        
+        if(pUser == usersList[i].userName && pPass == usersList[i].password){
+            console.log('well done')
+            window.location = 'account.html'
+        }else if(pUser == usersList[i].userName && pPass != usersList[i].password){
+            alert('invalid password') 
+        }else{
+            alert('try again')
+        }
+        
+    }
+}
 // function getUserList(){
 //     const userList = JSON.parse(localStorage.getItem('userName'));
 
@@ -56,30 +81,4 @@ console.log('entre al file')
 //     } */
 
 //     //return userList;
-// }
-
-
-const btn = document.getElementById('formAccount');
-btn.addEventListener('submit', (pUser, pPass, e) =>{
-    e.preventDefault();
-    console.log(pUser, pPass);
-    //event.preventDefault();
-
-});
-
-// function validateCredentials(pUser, pPass, usersList){
-
-//     console.log(pUser, pPass);
-    // var userList = getUserList();
-    // var bAccess = false; //return true/false if the user & pass are/aren't correct
-    
-
-    // for(var i = 0; i < usersList.length; i++){
-    //     if(pUser == usersList[i].userName && pPass == usersList[i].password){
-    //         bAccess = true;
-    //     }
-    // }
-
-    // return bAccess;
-//}
-
+// 
