@@ -93,14 +93,14 @@ function accountManage(indicator){
                 let deposit = Number(prompt('How much money would you like to deposit into your account?'));
                     if(deposit == null || isNaN(deposit) == true || deposit <= 0){
                         alert('Invalid, please try again. Session expired');
-                        opt = 2;
+                        //opt = 2;
                     }else{
 
                         var updateAmount = usersList[indicator].balance + deposit;
                         if(updateAmount <= 990){
                             alert('Account balance: ' + updateAmount);
                             usersList[indicator].balance = updateAmount;
-                            opt = prompt('Would you like to do another operation? \n 1. Yes \2 2. No');
+                            //opt = prompt('Would you like to do another operation? \n 1. Yes \2 2. No');
                         }else{
                             alert('Sorry, your account cannot have more than $990');
                         }
@@ -137,31 +137,6 @@ function accountManage(indicator){
             break; 
         }
     }
-    
-    // console.log(option);
-
-
-    // const user = JSON.parse(localStorage.getItem('userInfo'));
-    // if(user){console.log(user)};
-    
-    // textAbout.textContent = `Welcome ${user.nameUser}`;
-
-
-
-    /*
-    const cardAccount = document.createElement('div');
-    cardAccount.classList.add('col-6', 'm-3');
-    cardAccount.innerHTML = `
-        <div class="row m-3">
-            <div class="col-3 p-3">
-                <img src="${userData.profileImage}" class="img-fluid rounded-circle" alt="" srcset="">
-            </div>
-            <div class="col-6 p-3 card-info">
-                <p>Welcome ${userData.userName}</p>
-            </div>
-        </div>
-    `
-    boxAccount.appendChild(cardAccount); */
     
 }
 
