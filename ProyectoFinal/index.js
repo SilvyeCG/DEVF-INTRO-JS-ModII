@@ -28,9 +28,14 @@ const usersList = [
     }
 ];
 
-// LOGIN
-
 let loginForm = document.querySelector('#formAccount');
+let btnBalance = document.querySelector('#btnDeposit');
+let btnWithdraw = document.querySelector('#btnWithdraw');
+let btnDeposit = document.querySelector('#btnDeposit');
+boxAccount = document.getElementById('box-account');
+const textAbout = document.querySelector('#textAbout');
+
+// LOGIN FUNCTIONS
 
 loginForm.addEventListener('submit', (e) => {
 
@@ -41,7 +46,7 @@ loginForm.addEventListener('submit', (e) => {
     
     e.preventDefault();
 
-    //Function to be executed 
+    //Function to be executed. The values-input are executed as a parameter
 
     validateCredentials(userName, userPassword);
 });
@@ -57,48 +62,106 @@ function validateCredentials(pUser, pPass){
         
         if(userData.password == pPass){
             
-            window.location = 'account.html';
+            //window.location = 'account.html';
+            localStorage.setItem('userInfo', JSON.stringify(userData));
+            indicator = usersList.indexOf(userData);
+            accountManage(indicator);
+
         }else{
             alert('Invalid credentials. Password is incorrect');
         }
     }else{
         alert('Invalid credentials, User Name is incorrect')
     }
-
-    profile(userData);
+    
     
 }
-// function getUserList(){
 
-//     const userList = JSON.parse(localStorage.getItem('userName'));
+//ACCOUNT PAGE
+function accountManage(indicator){
+    console.log('hi')
+    var opt = 1;
+    while(opt == 1){
+        let option = prompt('What would you like to do today? \n 1. balance \n 2. deposit \n 3. withdrawal \n 4. Sign out');
+        switch(option){
+            case '1':
+                alert('Your current balance is: ' + usersList[indicator].balance);
+                opt = prompt('Would you like to do another operation? \n 1. Yes \2 2. No');
+            break;
 
-//     console.log(userList);
-//     /*if(userList == null){
+            case '2':
+                let deposit = Number(prompt('How much money would you like to deposit into your account?'));
+                    if(deposit == null || isNaN(deposit) == true || deposit <= 0){
+                        alert('Invalid, please try again. Session expired');
+                        opt = 2;
+                    }else{
 
-//         userList = [
-            
-            
-//             {
-//                 userName: 'user1',
-//                 password: 'abc',
-//                 nameUser: 'Mali',
-//                 balance: 200
-//             },
-//             {
-//                 userName: 'user2',
-//                 password: 'def',
-//                 nameUser: 'Gera',
-//                 balance: 290
-//             },
-//             {
-//                 userName: 'user3',
-//                 password: 'ghi',
-//                 nameUser: 'Maui',
-//                 balance: 67
-//             }
-//         ]; 
-//     } */
+                        var updateAmount = usersList[indicator].balance + deposit;
+                        if(updateAmount <= 990){
+                            alert('Account balance: ' + updateAmount);
+                            usersList[indicator].balance = updateAmount;
+                            opt = prompt('Would you like to do another operation? \n 1. Yes \2 2. No');
+                        }else{
+                            alert('Sorry, your account cannot have more than $990');
+                        }
+                    }
+            break;
+        
+            case '3':
+                let withdrawal = Number(prompt('Enter the amount: '));
+                    if(withdrawal == null || isNaN(withdrawal) == true || withdrawal <= 0){
+                        alert('Invalid, please try again. Session expired');
+                        opt = 2;
+                    }else{
+                        var balanceWith = usersList[indicator].balance - withdrawal;
+                        if(balanceWith >= 10){
+                            usersList[indicator].balance = balanceWith;
+                            alert('Your balance is: ' + usersList[indicator].balance);
+                            opt = prompt('Would you like to do another operation? \n 1. Yes \2 2. No');
+                        }else if(balanceWith > 0 && balanceWith < 10){
+                            alert('Sorry, your account cannot have less than $10');
+                        }else if(balanceWith < 0){
+                            alert('Your account is overdraft');
+                        }
+                    }
+            break;
 
-//     //return userList;
-// 
+            case '4':
+                    alert('Thank you for visiting us');
+                    opt= 2;
+            break;
+
+            default:
+            alert('Invalid option. Session expired')
+            opt = 2;
+            break; 
+        }
+    }
+    
+    // console.log(option);
+
+
+    // const user = JSON.parse(localStorage.getItem('userInfo'));
+    // if(user){console.log(user)};
+    
+    // textAbout.textContent = `Welcome ${user.nameUser}`;
+
+
+
+    /*
+    const cardAccount = document.createElement('div');
+    cardAccount.classList.add('col-6', 'm-3');
+    cardAccount.innerHTML = `
+        <div class="row m-3">
+            <div class="col-3 p-3">
+                <img src="${userData.profileImage}" class="img-fluid rounded-circle" alt="" srcset="">
+            </div>
+            <div class="col-6 p-3 card-info">
+                <p>Welcome ${userData.userName}</p>
+            </div>
+        </div>
+    `
+    boxAccount.appendChild(cardAccount); */
+    
+}
 

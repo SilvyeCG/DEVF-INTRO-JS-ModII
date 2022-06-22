@@ -51,6 +51,7 @@ function mostrarHTML(movies){
             </div>
             `   
             boxMovies.appendChild(cardMovies);
+            
         });
 }
 
